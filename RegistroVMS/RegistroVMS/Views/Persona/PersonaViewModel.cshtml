@@ -10,7 +10,25 @@
 @using (Html.BeginForm("PersonaViewModel", "Persona", FormMethod.Post))
 {
     @Html.LabelFor(m => m.Nombre)
-    @Html.TextAreaFor(m => m.Nombre)
+    @Html.TextBoxFor(m => m.Nombre)
     @Html.ValidationMessageFor(m => m.Nombre, null)
+
+    @Html.LabelFor(m => m.Edad);
+    @Html.TextBoxFor(m => m.Edad);
+    @Html.ValidationMessageFor(m => m.Edad, null)
+
+    @Html.LabelFor(m => m.Sexo);
+    @Html.TextBoxFor(m => m.Sexo);
+    @Html.ValidationMessageFor(m => m.Sexo, null)
+
+    @Html.LabelFor(m => m.N_Educativo);
+    @Html.TextBoxFor(m => m.N_Educativo);
+    @Html.ValidationMessageFor(m => m.N_Educativo, null)
+
+
+
+
+
+
     <input type="submit" />
 }
