@@ -17,6 +17,8 @@ namespace RegistroVMS.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
+            Console.WriteLine("Hola");
+
             return View();
         }
 
