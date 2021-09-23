@@ -1,0 +1,16 @@
+﻿@model  RegistroVMS.Models.ViewModels.PersonaViewModel
+
+
+@{
+    ViewBag.Title = "PersonaViewModel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PersonaViewModel</h2>
+@using (Html.BeginForm("PersonaViewModel", "Persona", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Nombre)
+    @Html.TextAreaFor(m => m.Nombre)
+    @Html.ValidationMessageFor(m => m.Nombre, null)
+    <input type="submit" />
+}
