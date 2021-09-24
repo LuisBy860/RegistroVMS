@@ -14,7 +14,7 @@
     @Html.ValidationMessageFor(m => m.Nombre, null)
 
     @Html.LabelFor(m => m.Edad);
-    @Html.TextBoxFor(m => m.Edad,new { Type = "Number" });
+    @Html.TextBoxFor(m => m.Edad, new { Type = "Number" });
     @Html.ValidationMessageFor(m => m.Edad, null)
 
     @Html.LabelFor(m => m.Sexo);
@@ -25,10 +25,5 @@
     @Html.TextBoxFor(m => m.N_Educativo);
     @Html.ValidationMessageFor(m => m.N_Educativo, null)
 
-
-
-
-
-
-    <input type="submit" />
+    <button type="submit" class="btn btn-success">ENVIAR</button>
 }
