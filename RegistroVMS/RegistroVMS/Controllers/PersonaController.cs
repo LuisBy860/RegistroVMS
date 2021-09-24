@@ -22,13 +22,23 @@ namespace RegistroVMS.Controllers
         public ActionResult PersonaViewModels(PersonaViewModel persona)
         {
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View("PersonaViewModel" ,persona);
+                return View("VistaMostrar" ,persona);
             }
-            return Redirect("PersonaViewModel");
+            else
+            return View("PersonaViewModel");
 
+            
+        }
+        public ActionResult VistaMostrar()
+        {
+            return View();
         }
 
+        public ActionResult VistaMostrars(PersonaViewModel PersonaViewModel)
+        {
+            return View("VistaMostrar");
+        }
     }
 }
