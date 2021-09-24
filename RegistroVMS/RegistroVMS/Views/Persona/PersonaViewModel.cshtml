@@ -7,14 +7,14 @@
 }
 
 <h2>PersonaViewModel</h2>
-@using (Html.BeginForm("PersonaViewModel", "Persona", FormMethod.Post))
+@using (Html.BeginForm("PersonaViewModelS", "Persona", FormMethod.Post))
 {
     @Html.LabelFor(m => m.Nombre)
     @Html.TextBoxFor(m => m.Nombre)
     @Html.ValidationMessageFor(m => m.Nombre, null)
 
     @Html.LabelFor(m => m.Edad);
-    @Html.TextBoxFor(m => m.Edad,new { Type "Number" });
+    @Html.TextBoxFor(m => m.Edad,new { Type = "Number" });
     @Html.ValidationMessageFor(m => m.Edad, null)
 
     @Html.LabelFor(m => m.Sexo);
