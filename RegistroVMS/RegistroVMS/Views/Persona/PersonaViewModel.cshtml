@@ -14,7 +14,7 @@
     @Html.ValidationMessageFor(m => m.Nombre, null)
 
     @Html.LabelFor(m => m.Edad);
-    @Html.TextBoxFor(m => m.Edad);
+    @Html.TextBoxFor(m => m.Edad,new { Type "Number" });
     @Html.ValidationMessageFor(m => m.Edad, null)
 
     @Html.LabelFor(m => m.Sexo);
