@@ -9,20 +9,20 @@ namespace RegistroVMS.Models.ViewModels
     public class PersonaViewModel
     {
         [Display (Name = "Nombre")]
-        [Required (ErrorMessage = "estos campos son requeridos")]
+        [Required (ErrorMessage = "Este campo es requerido")]
         public string Nombre { get; set; }
 
         [Display(Name = "Edad")]
-        [Required(ErrorMessage = "estos campos son requeridos")]
+        [Required(ErrorMessage = "Este campo es requerido")]
         public int Edad { get; set; }
 
         [Display(Name = "Sexo")]
-        [Required(ErrorMessage = "estos campos son requeridos")]
+        [Required(ErrorMessage = "Este campo es requerido")]
 
         public string Sexo { get; set; }
 
         [Display(Name = "N_Educativo")]
-        [Required(ErrorMessage = "estos campos son requeridos")]
+        [Required(ErrorMessage = "Este campo es requerido")]
 
         public string N_Educativo { get; set; }
     

@@ -10,20 +10,32 @@
 @using (Html.BeginForm("PersonaViewModelS", "Persona", FormMethod.Post))
 {
     @Html.LabelFor(m => m.Nombre)
+    <br />
     @Html.TextBoxFor(m => m.Nombre)
+    <br />
     @Html.ValidationMessageFor(m => m.Nombre, null)
+    <br />
 
     @Html.LabelFor(m => m.Edad);
+    <br />
     @Html.TextBoxFor(m => m.Edad, new { Type = "Number" });
+    <br />
     @Html.ValidationMessageFor(m => m.Edad, null)
+    <br />
 
     @Html.LabelFor(m => m.Sexo);
+    <br />
     @Html.TextBoxFor(m => m.Sexo);
+    <br />
     @Html.ValidationMessageFor(m => m.Sexo, null)
+    <br />
 
     @Html.LabelFor(m => m.N_Educativo);
+    <br />
     @Html.TextBoxFor(m => m.N_Educativo);
+    <br />
     @Html.ValidationMessageFor(m => m.N_Educativo, null)
+    <br />
 
     <button type="submit" class="btn btn-success">ENVIAR</button>
 }
